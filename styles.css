@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root{
+          --bg-color: #000;
+          --bg-color-2: #fff;
+}
+
+* {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+}
+
+html {
+          scroll-behavior: smooth;
+          overflow: scroll;
+}
+
+body {
+          font-family: 'Inter', sans-serif;
+}
+
+.body-dark {
+    background-color: black;
+    color: #fff;
+}
+
+.body-light {
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+          font-weight: 700;
+          font-size: 5rem;
+          padding-bottom: 4rem;
+}
+
+footer {
+          font-weight: bold;
+          margin-bottom: 2rem;
+}
+
+.play-learn {
+    padding: 0 2%;
+}
+
+.dark {
+          position: absolute;
+          top: 7rem;
+          left: 5rem;
+          font-size: 1.5rem;
+}
+
+.light {
+          position: absolute;
+          top: 7rem;
+          right: 5rem;
+          font-size: 1.5rem;
+}
+
+.container {
+          padding: 4% 0;
+          position: relative;
+}
+
+.key {
+    min-width: 6.5rem;
+    min-height: 6.3rem;
+    margin : 0 .25rem 1rem;
+    border-radius: 0.625rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    box-shadow: 4px 4px 4px #4D4D4D;
+}
+
+.light-key:hover {
+    background-color: var(--bg-color-2);
+    border: .1rem solid var(--bg-color);
+    color: var(--bg-color);
+}
+
+.dark-key:hover {
+    background-color: var(--bg-color);
+    border: .1rem solid var(--bg-color-2);
+    color: var(--bg-color-2);
+}
+
+#dark-hover-key {
+    background-color: var(--bg-color-2);
+    border: .1rem solid var(--bg-color);
+    color: var(--bg-color);
+}
+
+#light-hover-key {
+    background-color: var(--bg-color);
+    border: .1rem solid var(--bg-color-2);
+    color: var(--bg-color-2);
+}
+
+.light-key {
+    background-color: var(--bg-color);
+    border: .1rem solid var(--bg-color-2);
+    color: var(--bg-color-2);
+}
+
+.dark-key {
+    background-color: var(--bg-color-2);
+    border: .1rem solid var(--bg-color);
+    color: var(--bg-color);
+}
+
+.pressed-key-1 {
+    box-shadow: 4px 4px 4px #ff004f;
+}
+
+/* Media  */
+
+@media (max-width: 1450px) {
+    .dark {
+        top: 6.5rem;
+    }
+    
+    .light {
+        top: 6.5rem;
+    }
+}
+
+@media (max-width: 1350px) {
+    .dark {
+        top: 6rem;
+    }
+    
+    .light {
+        top: 6rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .dark {
+        top: 5.2rem;
+    }
+    
+    .light {
+        top: 5.2rem;
+    }
+
+    .key {
+        min-width: 5.5rem;
+        min-height: 5.5rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .dark {
+        display: none;
+    }
+    
+    .light {
+        display: none;
+    }
+
+    .key {
+        min-width: 5rem;
+        min-height: 5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 483px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
